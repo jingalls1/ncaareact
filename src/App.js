@@ -57,7 +57,7 @@ class App extends Component {
       let goodText = fuckyText.match(regexPattern);
       return (
         <a href={goodText[0]} target="_blank" className="italicize">
-          Watch live in HD HERE
+          Watch live here
         </a>
       );
     }
