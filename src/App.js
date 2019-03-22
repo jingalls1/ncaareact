@@ -47,19 +47,16 @@ class App extends Component {
   };
 
   finalFunc = index => {
+    debugger;
     let reg = /^Game/;
     const threads = this.state.redditData.filter(basketball =>
       reg.test(basketball.data.title)
     );
     if (threads.length === this.state.dataArr.length) {
       console.log(this.state.dataArr[index][1].data.children[1].data.body);
-      let fuckyText = this.state.dataArr[index][1].data.children[2].data.body;
+      let fuckyText = this.state.dataArr[index][1].data.children[1].data.body;
       let goodText = fuckyText.match(regexPattern);
-      return (
-        <a href={goodText[0]} target="_blank" className="italicize">
-          Watch live here
-        </a>
-      );
+      return <a href={goodText[0]} target="_blank" style={{fontStyle: "italic"}}>Watch live here</a>
     }
   };
 
@@ -170,7 +167,7 @@ class App extends Component {
           grabbing all the latest ncaa games, hold up! <br />
           <br />
           <br />
-          <div class="loader"> </div>
+          <div className="loader"> </div>
         </h2>
       );
     } else {
