@@ -1,0 +1,57 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+}
+
+.weather {
+  font-size: 2em;
+  color: black;
+  font-family: sans-serif;
+  font-weight: 600;
+  text-shadow: 3px 3px 6px gray;
+  cursor: pointer;
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+  list-style-type: none;
+  margin: auto;
+}
+
+body {
+  background: rgba(0, 0, 0, 0);
+}
+
+.italicize {
+  font-style: italic;
+}
+
+.loading {
+  text-align: center;
+}
+
+.loader {
+  border: 11px solid #f3f3f3;
+  /* Light grey */
+  border-top: 11px solid #3498db;
+  /* Blue */
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 0.7s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
