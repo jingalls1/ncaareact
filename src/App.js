@@ -117,7 +117,7 @@ class App extends Component {
     } else {
       return threads.map((hit, index) => (
         <li key={hit.data.created_utc}>
-          <a href={hit.data.url} target="_blank" style={{ fontSize: 20 }}>
+          <a href={hit.data.url} target="_blank" style={{ fontWeight: "bold" }}>
             {this.removeGtTitle(hit.data.title)}
           </a>
 
